@@ -1,0 +1,143 @@
+---
+title: " 5.2 Soluciones en serie cerca de un punto ordinario, parte I"
+format: 
+  html:
+    html-math-method: mathjax
+    self-contained: true
+    page-layout: article
+    toc: false
+    theme: none
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Outfit:wght@300;400;600&display=swap');
+
+          body { 
+            background-color: #fffaf0; 
+            background-image: radial-gradient(#ffcc80 0.8px, transparent 0.8px); 
+            background-size: 20px 20px;
+            padding: 20px;
+            font-family: 'Outfit', sans-serif;
+            color: #5d4037;
+            overflow-x: hidden;
+          }
+
+          /* Contenedor principal que oculta el scroll */
+          .cards-slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 0;
+            scrollbar-width: none;
+            padding: 20px 0;
+            scroll-behavior: smooth;
+          }
+          
+          .cards-slider::-webkit-scrollbar { display: none; }
+
+          /* Cada grupo ahora es una sección de pantalla completa */
+          .page-group {
+            flex: 0 0 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            scroll-snap-align: start;
+            box-sizing: border-box;
+            min-height: 80vh;
+          }
+
+          /* La tarjeta ahora ocupa el centro y es más ancha */
+          .notebook-card {
+            flex: 0 0 85%; /* Ajusta esto si la quieres más o menos ancha */
+            max-width: 800px;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(255, 167, 38, 0.15);
+            border-top: 12px solid #e67e22;
+            position: relative;
+            min-height: 550px;
+            margin: 0 auto;
+          }
+
+          h1 { 
+            color: #d35400; 
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 600; 
+            border-bottom: 2px dashed #f39c12;
+            padding-bottom: 10px;
+            font-size: 1.8rem;
+          }
+
+          .back-btn-rose {
+            background-color: #e67e22;
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 20px;
+            font-weight: 600;
+          }
+
+          .btn-siguiente {
+            background-color: #f39c12;
+            color: white !important;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            text-decoration: none;
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            transition: transform 0.2s;
+          }
+
+          .btn-siguiente:hover {
+            transform: scale(1.1);
+            background-color: #d35400;
+          }
+          
+          html { scroll-behavior: smooth; }
+        </style>
+---
+
+::::::::: cards-slider
+:::: {#grupo-1 .page-group}
+::: notebook-card
+# Maria José - Notebook
+
+![](imagen.png){fig-align="center" width="365"}
+
+<a href="#grupo-2" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a>
+:::
+::::
+
+:::: {#grupo-2 .page-group}
+::: notebook-card
+# Índice
+
+<a href="#grupo-1" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a> <a href="#grupo-3" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a>
+:::
+::::
+
+:::: {#grupo-3 .page-group}
+::: notebook-card
+# Convergencia en un punto
+
+Una [power serie]{style="color: #e67e22; font-weight: bold;"} $\sum_{n=0}^{\infty} a_n (x-x_0)^n$ converge en un punto $x$ si:
+
+$$\lim_{m \to \infty} \sum_{n=0}^{m} a_n (x-x_0)^n$$
+
+existe para ese $x$.
+
+<a href="#grupo-2" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a> <a href="#grupo-4" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a>
+:::
+::::
+:::::::::

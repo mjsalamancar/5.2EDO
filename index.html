@@ -2662,6 +2662,11 @@ transform: scale(1.1);
 background-color: #d35400;
 }
 html { scroll-behavior: smooth; }
+.indent-text {
+margin-left: 25px; 
+display: block;
+margin-top: 10px;
+}
 </style>
 
   <script>/*
@@ -2815,13 +2820,14 @@ window.Quarto = {
 </header>
 
 
+<p><a href="#grupo-2" class="back-btn-rose"> <i class="bi bi-arrow-left-short"></i> Regresar al índice </a></p>
 <div class="cards-slider">
 <div id="grupo-1" class="page-group">
 <section id="maria-josé---notebook" class="notebook-card">
 <h1>Maria José - Notebook</h1>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-left">
 <figure>
-<p><img role="img" src="data:image/png;base64,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" class="img-fluid quarto-figure quarto-figure-center" width="365"></p>
+<p><img role="img" src="data:image/png;base64,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" class="img-fluid quarto-figure quarto-figure-left" width="365"></p>
 </figure>
 </div>
 <p><a href="#grupo-2" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a></p>
@@ -2830,16 +2836,145 @@ window.Quarto = {
 <div id="grupo-2" class="page-group">
 <section id="índice" class="notebook-card">
 <h1>Índice</h1>
+<ul style="list-style-type: none; padding-left: 0; line-height: 2;">
+<li>
+<a href="#grupo-3" style="color: #5d4037; text-decoration: none;"><i class="bi bi-bookmark-fill" style="color: #e67e22;"></i> Reglas de Juego</a>
+</li>
+<li>
+<a href="#grupo-4" style="color: #5d4037; text-decoration: none;"><i class="bi bi-bookmark-fill" style="color: #e67e22;"></i> Notación</a>
+</li>
+<li>
+<a href="#grupo-6" style="color: #5d4037; text-decoration: none;"><i class="bi bi-bookmark-fill" style="color: #e67e22;"></i> Coeficientes Polinomiales</a>
+</li>
+<li>
+<a href="#grupo-7" style="color: #5d4037; text-decoration: none;"><i class="bi bi-bookmark-fill" style="color: #e67e22;"></i> Punto Ordinario</a>
+</li>
+<li>
+<a href="#grupo-8" style="color: #5d4037; text-decoration: none;"><i class="bi bi-bookmark-fill" style="color: #e67e22;"></i> Punto Singular</a>
+</li>
+<li>
+<a href="#grupo-9" style="color: #5d4037; text-decoration: none;"><i class="bi bi-bookmark-fill" style="color: #e67e22;"></i> Solución en el vecindario</a>
+</li>
+</ul>
 <p><a href="#grupo-1" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a> <a href="#grupo-3" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a></p>
 </section>
 </div>
 <div id="grupo-3" class="page-group">
-<section id="convergencia-en-un-punto" class="notebook-card">
-<h1>Convergencia en un punto</h1>
-<p>Una <span style="color: #e67e22; font-weight: bold;">power serie</span> <span class="math inline">\(\sum_{n=0}^{\infty} a_n (x-x_0)^n\)</span> converge en un punto <span class="math inline">\(x\)</span> si:</p>
-<p><span class="math display">\[\lim_{m \to \infty} \sum_{n=0}^{m} a_n (x-x_0)^n\]</span></p>
-<p>existe para ese <span class="math inline">\(x\)</span>.</p>
+<section id="reglas-de-juego" class="notebook-card">
+<h1>Reglas de Juego</h1>
+<ul>
+<li><p>En el capítulo 3 nosotros describimos métodos para resolver <span style="color: #e67e22; font-weight: bold;">Una Ecuación diferencial lineal de 2do orden</span> con coeficientes contantes.}</p></li>
+<li><p>Ahora vamos a considerar métodos para resolver <span style="color: #e67e22; font-weight: bold;">Una Ecuación diferencial lineal de 2do orden</span> cuando los coeficientes son funciones de la variable independiente.</p></li>
+<li><p>En este capítulo nosotros vamos a denotar la variable independiente como <span class="math inline">\(x\)</span>.</p></li>
+</ul>
 <p><a href="#grupo-2" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a> <a href="#grupo-4" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a></p>
+</section>
+</div>
+<div id="grupo-4" class="page-group">
+<section id="notación" class="notebook-card">
+<h1>Notación</h1>
+<p>Es suficiente considerar la ecuación homogenea:</p>
+<div id="ecuacion-1">
+<p><span class="math display">\[\begin{equation*}
+P(x)\frac{d^2y}{dx^2}+ Q(x)\frac{dy}{dx} + R(x)y = 0 \tag{1}
+\end{equation*}\]</span></p>
+</div>
+<p>Ya que el procedimiento correspondiente a la ecuación no- homogenea es similar.</p>
+<p>Muchos problemas en física-matematica, tienen la forma asi como la ecuación (1) ya que tienen coeficiente polinomiales.</p>
+<h3 id="ejemplola-ecuación-de-bessel" class="anchored">Ejemplo:La ecuación de Bessel</h3>
+<p><span class="math display">\[\begin{equation*}
+x^2y&#39;&#39; + xy&#39; + (x^2 - v^2)y=0
+\end{equation*}\]</span></p>
+<p>Donde v es constante.</p>
+<h3 id="ejemplo-la-ecuación-de-legendre" class="anchored">Ejemplo: La ecuación de Legendre</h3>
+<p><span class="math display">\[\begin{equation*}
+(1-x^2)y&#39;&#39; - 2xy&#39; + \alpha(\alpha+1)y
+\end{equation*}\]</span></p>
+<p>donde <span class="math inline">\(\alpha\)</span> es constante.</p>
+<p><a href="#grupo-3" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a> <a href="#grupo-5" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a></p>
+</section>
+</div>
+<div id="grupo-5" class="page-group">
+<section id="notación-1" class="notebook-card">
+<h1>Notación</h1>
+<ul>
+<li><p>Por la anterior razón para simplficar la computación algebraica, primero debo considerar el caso en que las funciónes P,Q y R son polinomios.</p></li>
+<li><p>El Método de Solución es aplicable también cuando P,Q y R son funciones análiticas.</p></li>
+</ul>
+<p><a href="#grupo-4" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a> <a href="#grupo-6" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a></p>
+</section>
+</div>
+<div id="grupo-6" class="page-group">
+<div class="notebook-card">
+<h1 id="coeficientes-polinomiales">Coeficientes Polinomiales</h1>
+<ul>
+<li>Supongamos que P, Q, R son polinomios y no hay un factor <span class="math inline">\((x-c)\)</span>, que sea en común entre los 3.</li>
+<li>Pero si hubiese un factor común <span class="math inline">\((x-c)\)</span> hay que dividirlo antes de continuar.</li>
+</ul>
+<h1 id="vecindario">Vecindario</h1>
+<ul>
+<li>Además supongamos que quiero resolver la ecuación (1) en el vecindario del punto <span class="math inline">\(x_o\)</span></li>
+<li>La solución a la Ec. (1) en el intervalo <span class="math inline">\(x_o\)</span> esta asociado muy de cerca con el comportamiento de P en ese intervalo.</li>
+</ul>
+<p><a href="#grupo-5" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a> <a href="#grupo-7" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a></p>
+</div>
+</div>
+<div id="grupo-7" class="page-group">
+<section id="punto-ordinario" class="notebook-card">
+<h1>Punto Ordinario</h1>
+<ul>
+<li>Un punto <span class="math inline">\(x_o\)</span> tal que <span class="math inline">\(P(x_o) \neq 0\)</span> es llamado un punto ordinario.</li>
+<li>Desde que P sea continuo, este seguiria que hay un intervalo abierto que contiene a este <span class="math inline">\(x_o\)</span> en donde <span class="math inline">\(P(x)\)</span> nunca es cero.</li>
+<li>En este intervalo, el cual llamaré I, puedo dividir mi Ec. (1) por <span class="math inline">\(P(x)\)</span> y así obtener:</li>
+</ul>
+<p><span class="math display">\[\begin{equation*}
+y&#39;&#39; + p(x)y&#39; + q(x)y = 0 \tag{2}
+\end{equation*}\]</span></p>
+<div class="indent-text">
+<pre><code>  Donde $p(x)= Q(x)/P(x)$ y $q(x)= R(x)/P(x)$ son funciones continuas en $I$.</code></pre>
+</div>
+<ul>
+<li>También es cierto que para Ec.1 solo existe una solución en el intervalo <span class="math inline">\(I\)</span> que satisface las condiciones iniciales:</li>
+</ul>
+<p><span class="math display">\[\begin{equation*}
+y(x_o) =y_o
+\end{equation*}\]</span></p>
+<p>y</p>
+<p><span class="math display">\[\begin{equation*}
+y&#39;(x_o) =y_o&#39;
+\end{equation*}\]</span></p>
+<p><a href="#grupo-6" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a> <a href="#grupo-8" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a></p>
+</section>
+</div>
+<div id="grupo-8" class="page-group">
+<section id="punto-singular" class="notebook-card">
+<h1>Punto Singular</h1>
+<ul>
+<li><p>En la otra mano, si <span class="math inline">\(P(x_o)=0\)</span> luego <span class="math inline">\(x_o\)</span> es llamado un punto singular de la ecuación (1). En este caso, como <span class="math inline">\((x-x_o)\)</span> no es factor de P,Q,R , entonces al menos uno de <span class="math inline">\(Q(x_o)\)</span> y <span class="math inline">\(R(x_o)\)</span> no es cero.</p></li>
+<li><p>Consecuentemente, al menos uno de los coeficientes p y q en la Ec.(2) se convierte en ilimitada como <span class="math inline">\(x \rightarrow x_o\)</span> así que el teorema de la unicidad, no viene al caso (no se aplica)</p></li>
+<li><p>Continuaremos a travéz de la sección 5.4 a 5.7 para hallar la solución a la Ec.1 en el vecindario de un punto singular.</p></li>
+</ul>
+<p><a href="#grupo-7" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a> <a href="#grupo-9" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a></p>
+</section>
+</div>
+<div id="grupo-9" class="page-group">
+<section id="solución-en-el-vecindario-de-un-punto-ordinario" class="notebook-card">
+<h1>Solución en el vecindario de un punto ordinario</h1>
+<ul>
+<li>Debo mirar la solución de la forma:</li>
+</ul>
+<p><span class="math display">\[\begin{equation*}
+y = a_o + a_1(x-x_o)+ \dots + a_n(x-x_o)^n + \dots = \sum_{n=0}^\infty a_n(x-x_o)^n  \tag{3}
+\end{equation*}\]</span></p>
+<ul>
+<li><p>Y supongamos que la serie converge en el intervalo <span class="math inline">\(|x- x_o|&lt; \rho\)</span> para algún <span class="math inline">\(\rho&gt;0\)</span>.</p></li>
+<li><p>Mientras que a primera vista parece que no es atractivo buscar una solución en la forma de la power series, es conveniente y util para una solución.</p></li>
+<li><p>Debido a sus intervalos de convergencia, power series se comportan mucho mejo que los polinomios y son fáciles de manipular analiticamente y numericamente.</p></li>
+<li><p>Si nosotros obtenemos una solución en terminos de funciones elementales, como funciones exponenciales o trigonométicas, necesitaremos esas series de potencias, para buscar la solucion numeica o hacer su gráfica.</p></li>
+<li><p>La manera más práctica de determinar esos coeficientes <span class="math inline">\(a_n\)</span> es sustituyendo las series (3) y sus derivadas para <span class="math inline">\(y\)</span>, <span class="math inline">\(y&#39;\)</span> y <span class="math inline">\(y&#39;&#39;\)</span> en la <a href="#ecuacion-1" style="color: #e67e22; text-decoration: none; font-weight: bold;"> Ec. (1) </a></p></li>
+<li><p>¡Veamos un ejemplo, para contextualizar!</p></li>
+</ul>
+<p><a href="#grupo-8" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a> <a href="#grupo-11" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a></p>
 </section>
 </div>
 </div>
@@ -2939,7 +3074,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/mjsalamancar\.github\.io\/5\.2EDO\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
